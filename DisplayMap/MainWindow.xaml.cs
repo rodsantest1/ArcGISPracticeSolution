@@ -1,5 +1,6 @@
 ﻿using Esri.ArcGISRuntime.Geometry;
 using Esri.ArcGISRuntime.Mapping;
+using ReactiveUI;
 using System.Windows;
 
 namespace DisplayMap
@@ -7,7 +8,7 @@ namespace DisplayMap
     /// <summary>
     /// Interaction logic for MainWindow.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class MainWindow : ReactiveWindow<MapViewModel>
     {
         public MainWindow()
         {

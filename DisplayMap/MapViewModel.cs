@@ -1,12 +1,14 @@
 ﻿using Esri.ArcGISRuntime.Geometry;
 using Esri.ArcGISRuntime.Mapping;
+using ReactiveUI;
 using System.ComponentModel;
 using System.Runtime.CompilerServices;
 
 namespace DisplayMap
 {
-    class MapViewModel : INotifyPropertyChanged
+    public class MapViewModel : ReactiveObject, INotifyPropertyChanged 
     {
+        public double ZoomLevel { get; set; }
 
         public MapViewModel()
         {
